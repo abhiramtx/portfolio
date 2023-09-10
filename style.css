@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #B89E97;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b79c95;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+#highlight {
+  text-underline-offset: 4px;
+  transition: 120ms ease-out;
+  width: fit-content;
+  position: relative;
+  top: 0;
+}
+
+body {
+  background-color: #20242F;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  color: #e3dfd5;
+
+}
+
+.line {
+  width: calc(100%);
+  height: 1px;
+  background-image: url('things/line-dark.svg');
+  filter: brightness(1.5);
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+main {
+  position: absolute;
+  top: 5%;
+}
+
+main section {
+  display: flex;
+}
+
+main section .title {
+  margin-right: 15%;
+  color: #B89E97;
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+#profile-picture {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: 1s;
+}
+
+#profile-picture:hover {
+  transform: rotate(360deg);
+}
+
+.profile-text {
+  text-align: left;
+}
+
+.name {
+  margin-top: 45px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+.description {
+  position: relative;
+  bottom: 20px;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+progress {
+  width: 280%;
+}
+
+.url {
+  color: #75D1EF;
+  text-underline-offset: 4px;
+  transition: 120ms ease-out;
+  width: fit-content;
+  position: relative;
+  top: 0;
+}
+
+.url:hover {
+  color: #A7E1F3;
+  top: -2px;
+}
+
+
+span.violin,
+span.piano,
+span.swim,
+span.hi,
+span.projects,
+span.experience,
+span.about,
+span.apps,
+span.games {
+  position: relative;
+  cursor: pointer;
+  padding: 4px;
+  margin: -4px;
+}
+
+span.emoji::before,
+span.emoji::after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -8px;
+  opacity: 0;
+  transform: scale(0.5) rotate(-30deg);
+  transition: opacity 120ms ease-out, transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5);
+}
+
+span.emoji::after {
+  top: revert;
+  left: revert;
+  bottom: -16px;
+  right: -8px;
+}
+
+span.piano::before,
+span.piano::after {
+  content: "🎹";
+  top: -14px;
+  left: -11px;
+}
+
+span.piano::after {
+  top: revert;
+  left: revert;
+  bottom: -17px;
+  right: -18px;
+}
+
+span.violin::before,
+span.violin::after {
+  content: "🎻";
+  top: -14px;
+  left: -11px;
+}
+
+span.violin::after {
+  top: revert;
+  left: revert;
+  bottom: -17px;
+  right: -18px;
+}
+
+span.swim::before,
+span.swim::after {
+  content: "🌊";
+  top: -14px;
+  left: -11px;
+}
+
+span.swim::after {
+  top: revert;
+  left: revert;
+  bottom: -17px;
+  right: -18px;
+}
+
+span.games::before,
+span.games::after {
+  content: "🎮";
+  top: -14px;
+  left: -11px;
+}
+
+span.games::after {
+  top: revert;
+  left: revert;
+  bottom: -17px;
+  right: -18px;
+}
+
+span.about::before,
+span.about::after {
+  content: "😃";
+  top: -14px;
+  left: -11px;
+}
+
+span.about::after {
+  top: revert;
+  left: revert;
+  bottom: -17px;
+  right: -18px;
+}
+
+span.apps::before,
+span.apps::after {
+  content: "📱";
+  top: -14px;
+  left: -11px;
+}
+
+span.apps::after {
+  top: revert;
+  left: revert;
+  bottom: -17px;
+  right: -18px;
+}
+
+span.experience::before,
+span.experience::after {
+  content: "👍";
+  top: -14px;
+  left: -11px;
+}
+
+span.experience::after {
+  top: revert;
+  left: revert;
+  bottom: -17px;
+  right: -18px;
+}
+
+span.projects::before,
+span.projects::after {
+  content: "🖱️";
+  top: -14px;
+  left: -11px;
+}
+
+span.projects::after {
+  top: revert;
+  left: revert;
+  bottom: -17px;
+  right: -18px;
+}
+
+span.hi::before,
+span.hi::after {
+  content: "👋";
+  top: -14px;
+  left: -11px;
+}
+
+span.hi::after {
+  top: revert;
+  left: revert;
+  bottom: -17px;
+  right: -18px;
+}
+
+span.emoji:hover::before,
+span.emoji:hover::after {
+  transform: scale(1.2) rotate(0deg);
+  opacity: 1;
+}
+
+span.emoji:active::before,
+span.emoji:active::after {
+  transform: scale(1) rotate(-2deg);
+}
+
+#last {
+  margin-bottom: 5%;
+}
+
+/* .proj {
+  border-radius: 2rem;
+  margin-top: 5px;
+  transition: 0.15s;
+  flex-basis: calc(1%);
+  border-color: white;
+}
+
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-color: black;
+}
+
+.img-container>div {
+  flex: 50%;
+  box-shadow: 0 0 0 1px black;
+  margin-bottom: 10px;
+} */
+
+.proj {
+  border-radius: 1rem;
+}
+
+.item {
+  width: 50%;
+  height: 50%;
+  transition: 0.25s;
+  border-radius: 1rem;
+}
+
+.item:hover {
+  transform: scale(1.01);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.container>div {
+  flex: 40%;
+  /* or - flex: 0 50% - or - flex-basis: 50% - */
+  /*demo*/
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+/* .proj:hover {
+  transform: scale(1.01);
+} */
+
+#changing-thing {
+  transition: 0.5s;
+}
+
+#changing-thing:hover {
+  transform: scale(1.03);
+}
+
+#changing-thing:active {
+  transform: scale(1);
+}

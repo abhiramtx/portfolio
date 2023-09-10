@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <main>
+    <section class="profile">
+      <img src="things/profilepicture.jpg" alt="Profile Picture" id="profile-picture">
+      <div class="profile-text">
+        <p class="name">Abhiram V</p>
+        <p class="description" id="changing-thing" onclick="change()">programming enthusiast</p>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="about">
+      <p class="title"><span class="emoji about">About</span></p>
+
+      <div class="content">
+        <p><span class="emoji hi" id="highlight"><u>Hi</u></span> there, I'm Abhiram</p>
+        <p>• A fullstack dev who aspires to create <span class="emoji games" id="highlight"><u>games</u></span> and
+          <span class="emoji apps" id="highlight"><u>applications</u></span>
+        </p>
+        <p>• I also like to <span class="emoji swim" id="highlight"><u>swim</u></span>, as well as play the <span
+            class="emoji violin" id="highlight"><u>violin</u></span> and <span class="emoji piano"
+            id="highlight"><u>piano</u></span> (not at the same time)</p>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="experience">
+      <p class="title"><span class="emoji experience">Skills</span></p>
+      <div class="content">
+        <p>Java - 65%</p>
+        <progress id="java" value="65" max="100"> 65% </progress>
+        <p>Python - 95%</p>
+        <progress id="py" value="95" max="100"> 95% </progress>
+        <p>HTML - 80%</p>
+        <progress id="html" value="85" max="100"> 80% </progress>
+        <p>CSS - 60%</p>
+        <progress id="css" value="60" max="100"> 60% </progress>
+        <p>JavaScript - 90%</p>
+        <progress id="js" value="90" max="100"> 90% </progress>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="projects">
+      <p class="title"><span class="emoji projects">Projects</span></p>
+      <div class="container">
+
+        <div class="item"><a class="proj" href="https://airdbv1.abhiramtx.repl.co/" target="_blank"
+            aria-label="AirDB">
+            <img class="proj" src="things/airdb.jpg" width="200" height="200">
+          </a></div>
+        <div class="item"><a class="proj" href="https://scratch.mit.edu/projects/718028360/" target="_blank" aria-label="Text Based Economy">
+            <img class="proj" src="things/tbe bg.png" width="200" height="200">
+          </a></div>
+
+      </div>
+      <!-- 
+      <div class="img-container">
+        <!-- <a class="proj" href="https://replit.com/site/ide" target="_blank"
+          aria-label="Visit the Replit IDE marketing website">
+          <img class="proj" src="things/airdb.jpg" width="250" height="250"
+            alt="hero section of Replit's IDE marketing page">
+        </a>
+        <a class="proj" href="https://replit.com/site/ide" target="_blank"
+          aria-label="Visit the Replit IDE marketing website">
+          <img class="proj" src="things/airdb.jpg" width="250" height="250"
+            alt="hero section of Replit's IDE marketing page">
+        </a> -->
+      <!-- 
+        <a class="proj" href="https://replit.com/site/ide" target="_blank"
+          aria-label="Visit the Replit IDE marketing website">
+          <img class="proj" src="things/airdb.jpg" width="250" height="250"
+            alt="hero section of Replit's IDE marketing page">
+        </a>
+        <a class="proj" href="https://replit.com/site/ide" target="_blank"
+          aria-label="Visit the Replit IDE marketing website">
+          <img class="proj" src="things/airdb.jpg" width="250" height="250"
+            alt="hero section of Replit's IDE marketing page">
+        </a>
+        <a class="proj" href="https://replit.com/site/ide" target="_blank"
+          aria-label="Visit the Replit IDE marketing website">
+          <img class="proj" src="things/airdb.jpg" width="250" height="250"
+            alt="hero section of Replit's IDE marketing page">
+        </a>
+        <a class="proj" href="https://replit.com/site/ide" target="_blank"
+          aria-label="Visit the Replit IDE marketing website">
+          <img class="proj" src="things/airdb.jpg" width="250" height="250"
+            alt="hero section of Replit's IDE marketing page">
+        </a> -->
+
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="links" id="last">
+      <p class="title"><span class="emoji hi">Say hi</span></p>
+      <div class="content">
+        <p>Find me on <a class="url" href="https://replit.com/@abhiramtx" target="_blank">Replit</a>, <a class="url"
+            href="https://github.com/abhiramtx" target="_blank">Github</a>, or <a class="url"
+            href="https://scratch.mit.edu/users/Air_heads" target="_blank">Scratch.</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function change() {
+      descriptions = ["programming enthusiast", "cool", "awesome", "hardworking", "swimmer", "#instrumentalmusic", "kindhearted", "amazing"];
+      document.getElementById("changing-thing").innerHTML = descriptions[Math.floor(Math.random()*descriptions.length)];
+    }
+    
+    
+  </script>
+
+</body>
+
+</html>
